@@ -1,0 +1,94 @@
+
+    /* ===== RESET BÁSICO — não precisa mexer ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: Arial,sans-serif; 
+      line-height: 1.6; 
+      background-color: #407d91;
+    }
+
+    /* ===== AQUI COMEÇA O QUE É SEU =====
+       Estilize o cabeçalho, o conteúdo e o rodapé.
+       Dicas de propriedades pra brincar:
+       - background, color, padding, margin
+       - text-align, font-size, font-weight
+       - max-width, border-radius
+    */
+
+    header {
+      /* TODO: cor de fundo, cor do texto, espaçamento interno (padding), centralizar os elementos do header */
+      background-color: #1A5F7A;
+      color: #57C5B6;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      /* TODO: tamanho da fonte, alinhamento */
+    }
+
+    main {
+      /* TODO: largura máxima, centralizar, espaçamentos */
+      max-width: 80vw;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    .destaque {
+      /* TODO: este é o bloco principal da sua mensagem.
+         Faça ele se destacar visualmente do resto. */
+         text-align: center;
+         border: 1px solid #1A5F7A;
+         padding: 1rem;
+         background-color: #57C5B6;
+         max-width: 50%;
+         border-radius: 1rem;
+
+    }
+  
+    /* abrir os seletores .destaque h2 e .destaque p logo abaixo de .destaque no CSS */
+    .destaque h2{
+      font-size: 1.5rem;
+      color: #F5EBE0;
+      word-wrap: break-word;
+    }
+
+    .destaque p{
+      text-align: justify;
+      color: #1A5F7A;
+      font-size: 0.9rem;
+    }
+
+    .destaque:hover{
+      background-color: #1A5F7A;
+    }
+    .destaque p:hover{
+      color:#F5EBE0;
+    }
+    img {
+      /* TODO: largura máxima 100%, talvez border-radius */
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+
+    img:hover{
+      width: 280px;
+      height: 280px;
+      cursor: pointer;
+    }
+
+
+    footer {
+      /* TODO: pequenininho, no fim, com a sua autoria */
+      background-color: #1A5F7A;
+      color: #F5EBE0;
+      text-align: center;
+      padding: 1rem;
+    }
